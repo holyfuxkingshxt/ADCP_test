@@ -1,0 +1,142 @@
+{
+  "parameters": {
+    "c": 1500.0,
+    "f0": 300000.0,
+    "fs_rf": 2400000.0,
+    "pulse_duration": 0.004,
+    "initial_range": 3.0,
+    "velocity_away": 0.2,
+    "amplitude": 0.4,
+    "scattering_phase": 0.7,
+    "record_duration": 0.01,
+    "fir_taps": 1601,
+    "lowpass_hz": 6000.0,
+    "decimation": 40,
+    "gate_guard": 0.0005,
+    "gate_samples": 180,
+    "lag_seconds": 0.0005,
+    "seed": 20261029
+  },
+  "truth": {
+    "time_scale": 1.0002667022269636,
+    "receive_onset_s": 0.004000533404453927,
+    "receive_duration_s": 0.004001066808907855,
+    "exact_doppler_hz": -79.98933475537041,
+    "small_v_doppler_hz": -80.0
+  },
+  "baseline": {
+    "samples": 180,
+    "lag_samples": 30,
+    "pairs": 150,
+    "lag_seconds": 0.0005,
+    "correlation_real": 0.15497317446191206,
+    "correlation_imag": -0.03978481345753603,
+    "phase_rad": -0.25129390642744204,
+    "phase_degrees": -14.39808025564786,
+    "doppler_hz": -79.98933475359922,
+    "velocity_small_v": 0.19997333688399804,
+    "velocity_exact": 0.199999999995582,
+    "coherence": 1.0,
+    "gate_first_index": 271,
+    "gate_last_exclusive": 451,
+    "gate_first_time": 0.004516666666666667,
+    "gate_window_seconds": 0.003
+  },
+  "validation": [
+    {
+      "true_velocity": 0.0,
+      "true_doppler_hz": 0.0,
+      "measured_doppler_hz": -1.4977135492475145e-11,
+      "measured_velocity": 3.744283873118786e-14,
+      "ambiguity_expected": false
+    },
+    {
+      "true_velocity": 0.2,
+      "true_doppler_hz": -79.98933475537041,
+      "measured_doppler_hz": -79.98933475359922,
+      "measured_velocity": 0.19997333688399804,
+      "ambiguity_expected": false
+    },
+    {
+      "true_velocity": -0.2,
+      "true_doppler_hz": 80.01066808906998,
+      "measured_doppler_hz": 80.01066809037762,
+      "measured_velocity": -0.20002667022594406,
+      "ambiguity_expected": false
+    },
+    {
+      "true_velocity": 3.0,
+      "true_doppler_hz": -1197.60479041916,
+      "measured_doppler_hz": 802.395209580817,
+      "measured_velocity": -2.0059880239520425,
+      "ambiguity_expected": true
+    }
+  ],
+  "noisy_rf": {
+    "samples": 180,
+    "lag_samples": 30,
+    "pairs": 150,
+    "lag_seconds": 0.0005,
+    "correlation_real": 0.1549776714481463,
+    "correlation_imag": -0.03980078190866632,
+    "phase_rad": -0.2513835819632891,
+    "phase_degrees": -14.40321828537747,
+    "doppler_hz": -80.01787936320817,
+    "velocity_small_v": 0.20004469840802042,
+    "velocity_exact": 0.2000713805540091,
+    "coherence": 0.9999107714555666,
+    "input_rf_snr_db": 20.0
+  },
+  "iq_noise_monte_carlo": {
+    "trials": 300,
+    "iq_snr_db": 10.0,
+    "mean_velocity": 0.20031068102459945,
+    "std_velocity": 0.010865906354360043,
+    "mean_coherence": 0.9086986662740939
+  },
+  "cloud_monte_carlo": [
+    {
+      "lag_ms": 0.1,
+      "pairs": 114,
+      "mean_velocity": 0.20669202104769702,
+      "std_velocity": 0.19238412280889938,
+      "mean_coherence": 0.967524849193451
+    },
+    {
+      "lag_ms": 0.25,
+      "pairs": 105,
+      "mean_velocity": 0.2146364094761079,
+      "std_velocity": 0.2184513885690422,
+      "mean_coherence": 0.915235360126729
+    },
+    {
+      "lag_ms": 0.5,
+      "pairs": 90,
+      "mean_velocity": 0.22974799147593675,
+      "std_velocity": 0.2567267628556957,
+      "mean_coherence": 0.8501069510848758
+    },
+    {
+      "lag_ms": 1.0,
+      "pairs": 60,
+      "mean_velocity": 0.20677464867050724,
+      "std_velocity": 0.3197717310842965,
+      "mean_coherence": 0.837772049496904
+    },
+    {
+      "lag_ms": 1.5,
+      "pairs": 30,
+      "mean_velocity": 0.15035557048540205,
+      "std_velocity": 0.3159618807454056,
+      "mean_coherence": 0.9069936129170219
+    }
+  ],
+  "limitations": [
+    "Single beam only; no three-dimensional reconstruction.",
+    "Point reflectors, constant c and radial velocity; amplitudes fixed.",
+    "No propagation loss, transducer beam pattern, multipath or hardware ringing.",
+    "Cloud trials use direct baseband evaluation of the same moving-reflector model.",
+    "Monte Carlo realizations use independent scatterer configurations, not a real ping-rate model.",
+    "Pair coherence is normalized over overlap; it is not a vendor correlation-count field."
+  ]
+}

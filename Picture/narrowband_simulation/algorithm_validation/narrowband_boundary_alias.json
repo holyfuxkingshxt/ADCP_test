@@ -1,0 +1,512 @@
+{
+  "params": {
+    "c": 1500.0,
+    "f0": 300000.0,
+    "fs_rf": 2400000.0,
+    "pulse_duration": 0.004,
+    "record_duration": 0.034,
+    "fir_taps": 1601,
+    "lowpass_hz": 6000.0,
+    "decimation": 40,
+    "lag_seconds": 0.0005,
+    "gate_start_s": 0.0145,
+    "gate_duration_s": 0.003,
+    "zone_edges_m": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0
+    ],
+    "scatterers_per_zone": 240,
+    "uniform_velocity_away": 0.2,
+    "target_zone_matlab": 3,
+    "adjacent_deeper_zone_matlab": 4,
+    "far_zone_matlab": 6,
+    "far_amplitude_multiplier": 10.0,
+    "adjacent_deeper_shear_velocity": 0.6,
+    "reference_range_m": 10.0,
+    "amplitude_scale": 0.04,
+    "absorption_np_per_m": 0.005,
+    "input_snr_gate_db": 20.0,
+    "seed": 20261029,
+    "tgc_reference_range_m": 3.0,
+    "tgc_min_range_m": 3.0,
+    "tgc_max_range_m": 21.0,
+    "tgc_max_gain_db": 40.0,
+    "layer_half_width_m": 0.08,
+    "clean_tolerance_mps": 1e-05,
+    "noisy_tolerance_mps": 0.001,
+    "input_snr_weakest_gate_db": 20.0
+  },
+  "truth": {
+    "velocity_mps": [
+      0.0,
+      0.1,
+      3.0,
+      -0.2,
+      0.4,
+      -0.4
+    ],
+    "fd_true_hz": [
+      -0.0,
+      -39.997333511099264,
+      -1197.6047904191616,
+      80.01066808907855,
+      -159.95734470807784,
+      160.04267804747934
+    ],
+    "fd_wrapped_expected_hz": [
+      0.0,
+      -39.997333511099264,
+      802.3952095808385,
+      80.01066808907855,
+      -159.9573447080778,
+      160.04267804747934
+    ],
+    "phase_wrapped_expected_rad": [
+      0.0,
+      -0.1256553291216503,
+      2.5207988956948046,
+      0.2513609270774605,
+      -0.5025208190226275,
+      0.5027889016147976
+    ],
+    "velocity_small_v_expected_mps": [
+      -0.0,
+      0.09999333377774816,
+      -2.005988023952096,
+      -0.20002667022269635,
+      0.3998933617701945,
+      -0.40010669511869834
+    ],
+    "velocity_exact_from_wrapped_expected_mps": [
+      -0.0,
+      0.1,
+      -2.0033089481133017,
+      -0.2,
+      0.39999999999999986,
+      -0.4000000000000001
+    ],
+    "is_ambiguous": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "selected_zone_matlab": 3,
+    "selected_velocity_mps": 3.0,
+    "range_centres_m": [
+      4.5,
+      7.5,
+      10.5,
+      13.5,
+      16.5,
+      19.5
+    ]
+  },
+  "reference": {
+    "clean": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.01053165645529818,
+        "correlation_imag": -1.0562337704893521e-16,
+        "phase_rad": -1.0029132406403084e-14,
+        "phase_degrees": -5.746269590647798e-13,
+        "doppler_hz": -3.1923719948043324e-12,
+        "velocity_small_v": 7.98092998701083e-15,
+        "velocity_exact": 7.98092998701083e-15,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010293021904459963,
+        "correlation_imag": -0.0013002234586291799,
+        "phase_rad": -0.12565532911749638,
+        "phase_degrees": -7.1995200317598655,
+        "doppler_hz": -39.99733350977703,
+        "velocity_small_v": 0.09999333377444257,
+        "velocity_exact": 0.09999999999669397,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": -0.0005440671635004651,
+        "correlation_imag": 0.0003890667788196826,
+        "phase_rad": 2.5207988956948224,
+        "phase_degrees": 144.43113772455195,
+        "doppler_hz": 802.3952095808442,
+        "velocity_small_v": -2.0059880239521104,
+        "velocity_exact": -2.003308948113316,
+        "coherence": 0.9999999999999999
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006786714037955349,
+        "correlation_imag": 0.000174277444732327,
+        "phase_rad": 0.25136092707375113,
+        "phase_degrees": 14.40192025582161,
+        "doppler_hz": 80.01066808789783,
+        "velocity_small_v": -0.20002667021974455,
+        "velocity_exact": -0.19999999999704898,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 2.5521574428950622e-05,
+        "correlation_imag": -1.4026150931790909e-05,
+        "phase_rad": -0.5025208190190498,
+        "phase_degrees": -28.792322047249023,
+        "doppler_hz": -159.957344706939,
+        "velocity_small_v": 0.3998933617673475,
+        "velocity_exact": 0.3999999999971514,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 7.83735683515365e-07,
+        "correlation_imag": 4.3099918778531087e-07,
+        "phase_rad": 0.5027889016117707,
+        "phase_degrees": 28.807682048372854,
+        "doppler_hz": 160.04267804651585,
+        "velocity_small_v": -0.40010669511628966,
+        "velocity_exact": -0.3999999999975926,
+        "coherence": 1.0
+      }
+    ],
+    "noisy": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010531636098038512,
+        "correlation_imag": 1.9291818207338763e-08,
+        "phase_rad": 1.8317968858523542e-06,
+        "phase_degrees": 0.00010495423048454731,
+        "doppler_hz": 0.0005830790582474851,
+        "velocity_small_v": -1.4576976456187127e-06,
+        "velocity_exact": -1.4576976442021245e-06,
+        "coherence": 0.999999994140324
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010293104590269653,
+        "correlation_imag": -0.001300292742620155,
+        "phase_rad": -0.1256609556862548,
+        "phase_degrees": -7.199842410402863,
+        "doppler_hz": -39.999124502238125,
+        "velocity_small_v": 0.09999781125559531,
+        "velocity_exact": 0.10000447807487746,
+        "coherence": 0.9999999928992872
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": -0.0005440202294107318,
+        "correlation_imag": 0.0003890741637385347,
+        "phase_rad": 2.5207490959405243,
+        "phase_degrees": 144.42828440880987,
+        "doppler_hz": 802.3793578267215,
+        "velocity_small_v": -2.0059483945668037,
+        "velocity_exact": -2.003269424509484,
+        "coherence": 0.9999998829104809
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006787302273006783,
+        "correlation_imag": 0.0001742845554457878,
+        "phase_rad": 0.25134987681601184,
+        "phase_degrees": 14.401287122690617,
+        "doppler_hz": 80.00715068161453,
+        "velocity_small_v": -0.20001787670403634,
+        "velocity_exact": -0.19999120882607044,
+        "coherence": 0.9999999313893833
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 2.5519787677776723e-05,
+        "correlation_imag": -1.403110083064034e-05,
+        "phase_rad": -0.5026993228669496,
+        "phase_degrees": -28.80254956436053,
+        "doppler_hz": -160.01416424644736,
+        "velocity_small_v": 0.4000354106161184,
+        "velocity_exact": 0.4001421246288723,
+        "coherence": 0.9999976669912006
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 7.805864215820014e-07,
+        "correlation_imag": 4.295203702667854e-07,
+        "phase_rad": 0.5030377762230063,
+        "phase_degrees": 28.821941513224612,
+        "doppler_hz": 160.1218972956923,
+        "velocity_small_v": -0.40030474323923076,
+        "velocity_exact": -0.40019794248282375,
+        "coherence": 0.9999338852992832
+      }
+    ],
+    "clean_tgc": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0595074677975488,
+        "correlation_imag": -5.867777364617523e-16,
+        "phase_rad": -9.860573104169667e-15,
+        "phase_degrees": -5.64969222449135e-13,
+        "doppler_hz": -3.138717902495194e-12,
+        "velocity_small_v": 7.846794756237984e-15,
+        "velocity_exact": 7.846794756237984e-15,
+        "coherence": 0.9998328848124046
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.45301981302975686,
+        "correlation_imag": -0.05722581361608076,
+        "phase_rad": -0.12565523727832353,
+        "phase_degrees": -7.199514769762867,
+        "doppler_hz": -39.997304276460376,
+        "velocity_small_v": 0.09999326069115094,
+        "velocity_exact": 0.09999992690365758,
+        "coherence": 0.9999756814444466
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": -0.09628833081300232,
+        "correlation_imag": 0.06885652422668669,
+        "phase_rad": 2.5207991089234354,
+        "phase_degrees": 144.43114994165154,
+        "doppler_hz": 802.3952774536197,
+        "velocity_small_v": -2.005988193634049,
+        "velocity_exact": -2.003309117342324,
+        "coherence": 0.9999934577108557
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.34644574075829465,
+        "correlation_imag": 0.08896450285539782,
+        "phase_rad": 0.2513608696302575,
+        "phase_degrees": 14.401916964551864,
+        "doppler_hz": 80.0106498030659,
+        "velocity_small_v": -0.20002662450766476,
+        "velocity_exact": -0.19999995429715825,
+        "coherence": 0.9999975727483363
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.030777350089032835,
+        "correlation_imag": -0.016914617916933165,
+        "phase_rad": -0.502520743217213,
+        "phase_degrees": -28.792317704123693,
+        "doppler_hz": -159.95732057846496,
+        "velocity_small_v": 0.3998933014461624,
+        "velocity_exact": 0.3999999396437907,
+        "coherence": 0.9999989046350053
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0019543370965489715,
+        "correlation_imag": 0.0010747470231448565,
+        "phase_rad": 0.502788847232686,
+        "phase_degrees": 28.80767893268081,
+        "doppler_hz": 160.0426607371156,
+        "velocity_small_v": -0.400106651842789,
+        "velocity_exact": -0.3999999567471681,
+        "coherence": 0.999999436207526
+      }
+    ],
+    "noisy_tgc": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0595074036331498,
+        "correlation_imag": -1.5939937343912177e-07,
+        "phase_rad": -2.678647759888887e-06,
+        "phase_degrees": -0.00015347521144380556,
+        "doppler_hz": -0.0008526400635766975,
+        "velocity_small_v": 2.1316001589417435e-06,
+        "velocity_exact": 2.1316001619708896e-06,
+        "coherence": 0.9998325806093628
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.4530275053259098,
+        "correlation_imag": -0.057227956014077944,
+        "phase_rad": -0.12565778086211568,
+        "phase_degrees": -7.199660506378995,
+        "doppler_hz": -39.998113924327754,
+        "velocity_small_v": 0.09999528481081939,
+        "velocity_exact": 0.10000195129322018,
+        "coherence": 0.9999757228891002
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": -0.09628186093946578,
+        "correlation_imag": 0.06885598642856418,
+        "phase_rad": 2.520771010920308,
+        "phase_degrees": 144.4295400446596,
+        "doppler_hz": 802.3863335814422,
+        "velocity_small_v": -2.0059658339536055,
+        "velocity_exact": -2.003286817346135,
+        "coherence": 0.9999934103239357
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.34648502222697,
+        "correlation_imag": 0.08896573329605172,
+        "phase_rad": 0.2513368891518735,
+        "phase_degrees": 14.400542984349757,
+        "doppler_hz": 80.00301657972088,
+        "velocity_small_v": -0.2000075414493022,
+        "velocity_exact": -0.19998087632702818,
+        "coherence": 0.9999973694923421
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0307755374032043,
+        "correlation_imag": -0.01691999953210858,
+        "phase_rad": -0.5026798928502192,
+        "phase_degrees": -28.801436306406007,
+        "doppler_hz": -160.00797948003336,
+        "velocity_small_v": 0.4000199487000834,
+        "velocity_exact": 0.4001266544626112,
+        "coherence": 0.999997156386524
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0019466385122173565,
+        "correlation_imag": 0.001070666494287893,
+        "phase_rad": 0.50284925018546,
+        "phase_degrees": 28.811139766944887,
+        "doppler_hz": 160.06188759413826,
+        "velocity_small_v": -0.40015471898534566,
+        "velocity_exact": -0.4000479982557971,
+        "coherence": 0.9999329911542676
+      }
+    ]
+  },
+  "model": "Controlled thin scattering layers, not a continuous water-column accuracy claim",
+  "geometry_checks": [
+    {
+      "zone_matlab": 1,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 2,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 3,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 4,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 5,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 6,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    }
+  ],
+  "oracle_iq_max_error": 1.0517307745022458e-13,
+  "oracle_iq_tgc_max_error": 2.1908793900640027e-12,
+  "raw_gate_snr_db": [
+    60.70945109902273,
+    60.644273428842126,
+    48.742239475235245,
+    48.939920589811734,
+    35.12691688801551,
+    19.999999999999996
+  ],
+  "noise_seed": 20261032,
+  "notes": {
+    "positive_velocity": "Away from the fixed transducer",
+    "time_units": "seconds, measured from transmit start",
+    "gate_indices": "MATLAB indices are 1-based",
+    "gate_columns": "Six gates, one for each layer; selected gate is column 3",
+    "ambiguity": "Single-lag data cannot identify the true ambiguity interval on its own",
+    "exact_vs_small": "Compare the usual small-v output with truth.velocity_small_v_expected_mps",
+    "rf_model": "Each scattered REAL RF echo is generated from exact moving-target propagation, then summed",
+    "tgc": "Applied to summed RF including noise, before FIR and decimation"
+  }
+}

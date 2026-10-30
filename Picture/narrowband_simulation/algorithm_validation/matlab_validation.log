@@ -1,0 +1,92 @@
+[警告: 目录权限被拒绝: J:\水声避障量产版本\量产测试\bootloader\N32_bootloader] 
+        Path         Zone    Truth_mps     Exact_mps     SmallV_mps     ModelError_mps     Status 
+    _____________    ____    _________    ___________    ___________    ______________    ________
+
+    {'clean'    }     1           0        7.8668e-15     7.8668e-15      7.8668e-15      {'PASS'}
+    {'clean'    }     2         0.1               0.1       0.099993       3.306e-12      {'PASS'}
+    {'clean'    }     3         0.2               0.2        0.19997      3.1939e-12      {'PASS'}
+    {'clean'    }     4        -0.2              -0.2       -0.20003      2.9509e-12      {'PASS'}
+    {'clean'    }     5         0.4               0.4        0.39989      2.8484e-12      {'PASS'}
+    {'clean'    }     6        -0.4              -0.4       -0.40011      2.4071e-12      {'PASS'}
+    {'noisy'    }     1           0       -2.8249e-07    -2.8249e-07      2.8249e-07      {'PASS'}
+    {'noisy'    }     2         0.1          0.099996       0.099989      3.9005e-06      {'PASS'}
+    {'noisy'    }     3         0.2           0.19996        0.19994      3.7874e-05      {'PASS'}
+    {'noisy'    }     4        -0.2          -0.19999       -0.20002      6.7422e-06      {'PASS'}
+    {'noisy'    }     5         0.4           0.39992        0.39982      7.5516e-05      {'PASS'}
+    {'noisy'    }     6        -0.4          -0.40037       -0.40048      0.00037103      {'PASS'}
+    {'clean_tgc'}     1           0        7.8458e-15     7.8458e-15      7.8458e-15      {'PASS'}
+    {'clean_tgc'}     2         0.1               0.1       0.099993      7.3096e-08      {'PASS'}
+    {'clean_tgc'}     3         0.2               0.2        0.19997      7.5183e-08      {'PASS'}
+    {'clean_tgc'}     4        -0.2              -0.2       -0.20003      4.5703e-08      {'PASS'}
+    {'clean_tgc'}     5         0.4               0.4        0.39989      6.0356e-08      {'PASS'}
+    {'clean_tgc'}     6        -0.4              -0.4       -0.40011      4.3253e-08      {'PASS'}
+    {'noisy_tgc'}     1           0       -4.0279e-06    -4.0279e-06      4.0279e-06      {'PASS'}
+    {'noisy_tgc'}     2         0.1          0.099993       0.099986      7.2367e-06      {'PASS'}
+    {'noisy_tgc'}     3         0.2           0.19996        0.19993      4.1058e-05      {'PASS'}
+    {'noisy_tgc'}     4        -0.2          -0.19999       -0.20002      1.1008e-05      {'PASS'}
+    {'noisy_tgc'}     5         0.4            0.3999        0.39979      9.9815e-05      {'PASS'}
+    {'noisy_tgc'}     6        -0.4          -0.40041       -0.40051      0.00040581      {'PASS'}
+
+PASS: C:\Users\pc\Desktop\ADCP\Picture\narrowband_simulation\algorithm_validation\narrowband_validation.mat
+EXPECTED_ALIAS validates the wrapped result, not true-velocity recovery.
+        Path         Zone    Truth_mps     Exact_mps     SmallV_mps     ModelError_mps     Status 
+    _____________    ____    _________    ___________    ___________    ______________    ________
+
+    {'clean'    }     1           0        7.8668e-15     7.8668e-15      7.8668e-15      {'PASS'}
+    {'clean'    }     2         0.1               0.1       0.099993       3.306e-12      {'PASS'}
+    {'clean'    }     3         2.4               2.4         2.3962      6.0396e-14      {'PASS'}
+    {'clean'    }     4        -0.2              -0.2       -0.20003      2.9509e-12      {'PASS'}
+    {'clean'    }     5         0.4               0.4        0.39989      2.8484e-12      {'PASS'}
+    {'clean'    }     6        -0.4              -0.4       -0.40011      2.4071e-12      {'PASS'}
+    {'noisy'    }     1           0       -1.9206e-06    -1.9206e-06      1.9206e-06      {'PASS'}
+    {'noisy'    }     2         0.1               0.1       0.099993      1.5269e-07      {'PASS'}
+    {'noisy'    }     3         2.4               2.4         2.3962      1.4863e-05      {'PASS'}
+    {'noisy'    }     4        -0.2              -0.2       -0.20002      4.2445e-06      {'PASS'}
+    {'noisy'    }     5         0.4           0.39998        0.39988      1.5941e-05      {'PASS'}
+    {'noisy'    }     6        -0.4          -0.39985       -0.39995       0.0001546      {'PASS'}
+    {'clean_tgc'}     1           0        7.8458e-15     7.8458e-15      7.8458e-15      {'PASS'}
+    {'clean_tgc'}     2         0.1               0.1       0.099993      7.3096e-08      {'PASS'}
+    {'clean_tgc'}     3         2.4               2.4         2.3962      3.3417e-07      {'PASS'}
+    {'clean_tgc'}     4        -0.2              -0.2       -0.20003      4.5703e-08      {'PASS'}
+    {'clean_tgc'}     5         0.4               0.4        0.39989      6.0356e-08      {'PASS'}
+    {'clean_tgc'}     6        -0.4              -0.4       -0.40011      4.3253e-08      {'PASS'}
+    {'noisy_tgc'}     1           0        5.1436e-06     5.1436e-06      5.1436e-06      {'PASS'}
+    {'noisy_tgc'}     2         0.1               0.1       0.099994      3.9186e-07      {'PASS'}
+    {'noisy_tgc'}     3         2.4               2.4         2.3961      3.7975e-05      {'PASS'}
+    {'noisy_tgc'}     4        -0.2          -0.19999       -0.20002      6.2352e-06      {'PASS'}
+    {'noisy_tgc'}     5         0.4           0.39996        0.39985      4.2353e-05      {'PASS'}
+    {'noisy_tgc'}     6        -0.4          -0.39992       -0.40002      8.3536e-05      {'PASS'}
+
+PASS: C:\Users\pc\Desktop\ADCP\Picture\narrowband_simulation\algorithm_validation\narrowband_boundary_valid.mat
+EXPECTED_ALIAS validates the wrapped result, not true-velocity recovery.
+        Path         Zone    Truth_mps     Exact_mps     SmallV_mps     ModelError_mps          Status      
+    _____________    ____    _________    ___________    ___________    ______________    __________________
+
+    {'clean'    }     1           0        7.8668e-15     7.8668e-15      7.8668e-15      {'PASS'          }
+    {'clean'    }     2         0.1               0.1       0.099993       3.306e-12      {'PASS'          }
+    {'clean'    }     3           3           -2.0033         -2.006      1.4211e-14      {'EXPECTED_ALIAS'}
+    {'clean'    }     4        -0.2              -0.2       -0.20003      2.9509e-12      {'PASS'          }
+    {'clean'    }     5         0.4               0.4        0.39989      2.8484e-12      {'PASS'          }
+    {'clean'    }     6        -0.4              -0.4       -0.40011      2.4071e-12      {'PASS'          }
+    {'noisy'    }     1           0       -1.4577e-06    -1.4577e-06      1.4577e-06      {'PASS'          }
+    {'noisy'    }     2         0.1               0.1       0.099998      4.4781e-06      {'PASS'          }
+    {'noisy'    }     3           3           -2.0033        -2.0059      3.9524e-05      {'EXPECTED_ALIAS'}
+    {'noisy'    }     4        -0.2          -0.19999       -0.20002      8.7912e-06      {'PASS'          }
+    {'noisy'    }     5         0.4           0.40014        0.40004      0.00014212      {'PASS'          }
+    {'noisy'    }     6        -0.4           -0.4002        -0.4003      0.00019794      {'PASS'          }
+    {'clean_tgc'}     1           0        7.8458e-15     7.8458e-15      7.8458e-15      {'PASS'          }
+    {'clean_tgc'}     2         0.1               0.1       0.099993      7.3096e-08      {'PASS'          }
+    {'clean_tgc'}     3           3           -2.0033         -2.006      1.6923e-07      {'EXPECTED_ALIAS'}
+    {'clean_tgc'}     4        -0.2              -0.2       -0.20003      4.5703e-08      {'PASS'          }
+    {'clean_tgc'}     5         0.4               0.4        0.39989      6.0356e-08      {'PASS'          }
+    {'clean_tgc'}     6        -0.4              -0.4       -0.40011      4.3253e-08      {'PASS'          }
+    {'noisy_tgc'}     1           0        2.1316e-06     2.1316e-06      2.1316e-06      {'PASS'          }
+    {'noisy_tgc'}     2         0.1               0.1       0.099995      1.9513e-06      {'PASS'          }
+    {'noisy_tgc'}     3           3           -2.0033         -2.006      2.2131e-05      {'EXPECTED_ALIAS'}
+    {'noisy_tgc'}     4        -0.2          -0.19998       -0.20001      1.9124e-05      {'PASS'          }
+    {'noisy_tgc'}     5         0.4           0.40013        0.40002      0.00012665      {'PASS'          }
+    {'noisy_tgc'}     6        -0.4          -0.40005       -0.40015      4.7998e-05      {'PASS'          }
+
+PASS: C:\Users\pc\Desktop\ADCP\Picture\narrowband_simulation\algorithm_validation\narrowband_boundary_alias.mat
+EXPECTED_ALIAS validates the wrapped result, not true-velocity recovery.
+PASS: 8192 independent realizations, truth 0.20000000, estimate 0.19798851 m/s

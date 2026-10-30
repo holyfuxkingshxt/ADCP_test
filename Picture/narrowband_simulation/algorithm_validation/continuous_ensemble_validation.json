@@ -1,0 +1,60 @@
+{
+  "params": {
+    "c": 1500.0,
+    "f0": 300000.0,
+    "fs_rf": 2400000.0,
+    "pulse_duration": 0.004,
+    "record_duration": 0.034,
+    "fir_taps": 1601,
+    "lowpass_hz": 6000.0,
+    "decimation": 40,
+    "lag_seconds": 0.0005,
+    "gate_start_s": 0.0145,
+    "gate_duration_s": 0.003,
+    "zone_edges_m": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0
+    ],
+    "scatterers_per_zone": 240,
+    "uniform_velocity_away": 0.2,
+    "target_zone_matlab": 3,
+    "adjacent_deeper_zone_matlab": 4,
+    "far_zone_matlab": 6,
+    "far_amplitude_multiplier": 10.0,
+    "adjacent_deeper_shear_velocity": 0.6,
+    "reference_range_m": 10.0,
+    "amplitude_scale": 0.04,
+    "absorption_np_per_m": 0.005,
+    "input_snr_gate_db": 20.0,
+    "seed": 20261029,
+    "tgc_reference_range_m": 3.0,
+    "tgc_min_range_m": 3.0,
+    "tgc_max_range_m": 21.0,
+    "tgc_max_gain_db": 40.0
+  },
+  "truth": {
+    "velocity_mps": 0.2,
+    "tolerance_mps": 0.01,
+    "realizations": 8192
+  },
+  "reference": {
+    "ensemble_velocity_exact_mps": 0.19798850821799738,
+    "expected_velocity_exact_mps": 0.1999888474758894,
+    "single_estimate_std_mps": 0.22469187908833402,
+    "exact_basis_vs_full_rf_max_error": 9.315861767939204e-13
+  },
+  "notes": {
+    "input": "180 x 8192 I/Q gates, columns are independent scattering realizations",
+    "use": "Correlate each column, average COMPLEX correlations, then convert phase to velocity",
+    "model": "Continuous scatterers from 3 to 21 m, TGC and same FIR as full RF example",
+    "independence": "Artificial independent scattering realizations; no real ping-to-ping evolution model",
+    "rf_scope": "One full-RF example validates the exact linear map; not 8192 stored RF records",
+    "noise": "No added receiver noise; tests random scattering error and ensemble averaging"
+  },
+  "seed": 20261031
+}

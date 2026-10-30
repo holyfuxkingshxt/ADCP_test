@@ -1,0 +1,512 @@
+{
+  "params": {
+    "c": 1500.0,
+    "f0": 300000.0,
+    "fs_rf": 2400000.0,
+    "pulse_duration": 0.004,
+    "record_duration": 0.034,
+    "fir_taps": 1601,
+    "lowpass_hz": 6000.0,
+    "decimation": 40,
+    "lag_seconds": 0.0005,
+    "gate_start_s": 0.0145,
+    "gate_duration_s": 0.003,
+    "zone_edges_m": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0
+    ],
+    "scatterers_per_zone": 240,
+    "uniform_velocity_away": 0.2,
+    "target_zone_matlab": 3,
+    "adjacent_deeper_zone_matlab": 4,
+    "far_zone_matlab": 6,
+    "far_amplitude_multiplier": 10.0,
+    "adjacent_deeper_shear_velocity": 0.6,
+    "reference_range_m": 10.0,
+    "amplitude_scale": 0.04,
+    "absorption_np_per_m": 0.005,
+    "input_snr_gate_db": 20.0,
+    "seed": 20261029,
+    "tgc_reference_range_m": 3.0,
+    "tgc_min_range_m": 3.0,
+    "tgc_max_range_m": 21.0,
+    "tgc_max_gain_db": 40.0,
+    "layer_half_width_m": 0.08,
+    "clean_tolerance_mps": 1e-05,
+    "noisy_tolerance_mps": 0.001,
+    "input_snr_weakest_gate_db": 20.0
+  },
+  "truth": {
+    "velocity_mps": [
+      0.0,
+      0.1,
+      0.2,
+      -0.2,
+      0.4,
+      -0.4
+    ],
+    "fd_true_hz": [
+      -0.0,
+      -39.997333511099264,
+      -79.98933475536595,
+      80.01066808907855,
+      -159.95734470807784,
+      160.04267804747934
+    ],
+    "fd_wrapped_expected_hz": [
+      0.0,
+      -39.997333511099264,
+      -79.98933475536595,
+      80.01066808907855,
+      -159.9573447080778,
+      160.04267804747934
+    ],
+    "phase_wrapped_expected_rad": [
+      0.0,
+      -0.1256553291216503,
+      -0.2512939064329924,
+      0.2513609270774605,
+      -0.5025208190226275,
+      0.5027889016147976
+    ],
+    "velocity_small_v_expected_mps": [
+      -0.0,
+      0.09999333377774816,
+      0.19997333688841484,
+      -0.20002667022269635,
+      0.3998933617701945,
+      -0.40010669511869834
+    ],
+    "velocity_exact_from_wrapped_expected_mps": [
+      -0.0,
+      0.1,
+      0.19999999999999996,
+      -0.2,
+      0.39999999999999986,
+      -0.4000000000000001
+    ],
+    "is_ambiguous": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "selected_zone_matlab": 3,
+    "selected_velocity_mps": 0.2,
+    "range_centres_m": [
+      4.5,
+      7.5,
+      10.5,
+      13.5,
+      16.5,
+      19.5
+    ]
+  },
+  "reference": {
+    "clean": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010531656455298178,
+        "correlation_imag": -1.0532171664478815e-16,
+        "phase_rad": -1.0000489200519238e-14,
+        "phase_degrees": -5.729858242559111e-13,
+        "doppler_hz": -3.1832545791995063e-12,
+        "velocity_small_v": 7.958136447998765e-15,
+        "velocity_exact": 7.958136447998765e-15,
+        "coherence": 0.9999999999999999
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010293021904459963,
+        "correlation_imag": -0.0013002234586291799,
+        "phase_rad": -0.12565532911749638,
+        "phase_degrees": -7.1995200317598655,
+        "doppler_hz": -39.99733350977703,
+        "velocity_small_v": 0.09999333377444257,
+        "velocity_exact": 0.09999999999669397,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006944173803949683,
+        "correlation_imag": -0.00017827127848227422,
+        "phase_rad": -0.25129390643700483,
+        "phase_degrees": -14.398080256195767,
+        "doppler_hz": -79.98933475664315,
+        "velocity_small_v": 0.19997333689160784,
+        "velocity_exact": 0.20000000000319382,
+        "coherence": 0.9999999999999999
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006786714037955348,
+        "correlation_imag": 0.00017427744473232703,
+        "phase_rad": 0.25136092707375124,
+        "phase_degrees": 14.401920255821617,
+        "doppler_hz": 80.01066808789787,
+        "velocity_small_v": -0.20002667021974468,
+        "velocity_exact": -0.19999999999704912,
+        "coherence": 0.9999999999999999
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 2.552157442895066e-05,
+        "correlation_imag": -1.4026150931790924e-05,
+        "phase_rad": -0.5025208190190497,
+        "phase_degrees": -28.792322047249016,
+        "doppler_hz": -159.95734470693895,
+        "velocity_small_v": 0.39989336176734736,
+        "velocity_exact": 0.3999999999971513,
+        "coherence": 1.0
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 7.837356835153691e-07,
+        "correlation_imag": 4.3099918778531214e-07,
+        "phase_rad": 0.5027889016117697,
+        "phase_degrees": 28.807682048372797,
+        "doppler_hz": 160.04267804651553,
+        "velocity_small_v": -0.4001066951162889,
+        "velocity_exact": -0.39999999999759184,
+        "coherence": 1.0
+      }
+    ],
+    "noisy": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010531885407621913,
+        "correlation_imag": 3.7387487223633686e-09,
+        "phase_rad": 3.549932967992116e-07,
+        "phase_degrees": 2.0339617662029822e-05,
+        "doppler_hz": 0.00011299787590016566,
+        "velocity_small_v": -2.824946897504141e-07,
+        "velocity_exact": -2.82494689697212e-07,
+        "coherence": 0.99999999350154
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.010292676402476247,
+        "correlation_imag": -0.0013001285670591275,
+        "phase_rad": -0.12565042829490303,
+        "phase_degrees": -7.199239235309125,
+        "doppler_hz": -39.99577352949513,
+        "velocity_small_v": 0.09998943382373783,
+        "velocity_exact": 0.09999609952598862,
+        "coherence": 0.9999999930815827
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006944580794143593,
+        "correlation_imag": -0.00017824650621022338,
+        "phase_rad": -0.25124632509229916,
+        "phase_degrees": -14.395354045960575,
+        "doppler_hz": -79.97418914422542,
+        "velocity_small_v": 0.19993547286056357,
+        "velocity_exact": 0.1999621258753576,
+        "coherence": 0.9999998573363718
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0006786118023871234,
+        "correlation_imag": 0.00017425600927697312,
+        "phase_rad": 0.2513524523297841,
+        "phase_degrees": 14.401434688759844,
+        "doppler_hz": 80.00797049311025,
+        "velocity_small_v": -0.20001992623277562,
+        "velocity_exact": -0.19999325780832639,
+        "coherence": 0.9999998979746838
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 2.5529906346585584e-05,
+        "correlation_imag": -1.4027577407061225e-05,
+        "phase_rad": -0.5024259736917788,
+        "phase_degrees": -28.786887810289855,
+        "doppler_hz": -159.92715450161032,
+        "velocity_small_v": 0.3998178862540258,
+        "velocity_exact": 0.3999244842286562,
+        "coherence": 0.9999981290206248
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 7.836900852466122e-07,
+        "correlation_imag": 4.314503856860136e-07,
+        "phase_rad": 0.5032553987890929,
+        "phase_degrees": 28.83441036778818,
+        "doppler_hz": 160.19116870993435,
+        "velocity_small_v": -0.4004779217748359,
+        "velocity_exact": -0.40037102860318663,
+        "coherence": 0.9999102163640076
+      }
+    ],
+    "clean_tgc": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.05950746779754883,
+        "correlation_imag": -5.869891751093952e-16,
+        "phase_rad": -9.864126248933986e-15,
+        "phase_degrees": -5.651728026481295e-13,
+        "doppler_hz": -3.1398489036007188e-12,
+        "velocity_small_v": 7.849622259001797e-15,
+        "velocity_exact": 7.849622259001797e-15,
+        "coherence": 0.9998328848124047
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.453019813029757,
+        "correlation_imag": -0.05722581361608076,
+        "phase_rad": -0.12565523727832348,
+        "phase_degrees": -7.199514769762865,
+        "doppler_hz": -39.997304276460355,
+        "velocity_small_v": 0.09999326069115089,
+        "velocity_exact": 0.09999992690365754,
+        "coherence": 0.9999756814444468
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.1228972101380502,
+        "correlation_imag": -0.03155023880359013,
+        "phase_rad": -0.2512938119803208,
+        "phase_degrees": -14.398074844226425,
+        "doppler_hz": -79.98930469014681,
+        "velocity_small_v": 0.19997326172536703,
+        "velocity_exact": 0.19999992481690734,
+        "coherence": 0.9999934577250318
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.34644574075829476,
+        "correlation_imag": 0.08896450285539784,
+        "phase_rad": 0.25136086963025744,
+        "phase_degrees": 14.40191696455186,
+        "doppler_hz": 80.01064980306589,
+        "velocity_small_v": -0.20002662450766473,
+        "velocity_exact": -0.19999995429715822,
+        "coherence": 0.9999975727483362
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.030777350089032842,
+        "correlation_imag": -0.016914617916933165,
+        "phase_rad": -0.5025207432172129,
+        "phase_degrees": -28.792317704123686,
+        "doppler_hz": -159.95732057846493,
+        "velocity_small_v": 0.3998933014461623,
+        "velocity_exact": 0.39999993964379066,
+        "coherence": 0.999998904635005
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.001954337096548976,
+        "correlation_imag": 0.001074747023144858,
+        "phase_rad": 0.5027888472326857,
+        "phase_degrees": 28.80767893268079,
+        "doppler_hz": 160.04266073711548,
+        "velocity_small_v": -0.4001066518427887,
+        "velocity_exact": -0.3999999567471678,
+        "coherence": 0.9999994362075261
+      }
+    ],
+    "noisy_tgc": [
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.05950903666490875,
+        "correlation_imag": 3.0121489610156625e-07,
+        "phase_rad": 5.0616664792460675e-06,
+        "phase_degrees": 0.00029001212656364235,
+        "doppler_hz": 0.0016111784809091242,
+        "velocity_small_v": -4.02794620227281e-06,
+        "velocity_exact": -4.0279461914565766e-06,
+        "coherence": 0.9998330549812193
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.45301175885893924,
+        "correlation_imag": -0.05722065365713524,
+        "phase_rad": -0.12564623642962483,
+        "phase_degrees": -7.198999059120396,
+        "doppler_hz": -39.99443921733553,
+        "velocity_small_v": 0.09998609804333884,
+        "velocity_exact": 0.09999276330082886,
+        "coherence": 0.9999756702465744
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.12290534352779177,
+        "correlation_imag": -0.031545581816109815,
+        "phase_rad": -0.25124232493425913,
+        "phase_degrees": -14.395124853787497,
+        "doppler_hz": -79.97291585437497,
+        "velocity_small_v": 0.19993228963593743,
+        "velocity_exact": 0.19995894180198256,
+        "coherence": 0.9999930948846995
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.346415901354828,
+        "correlation_imag": 0.08895175208234793,
+        "phase_rad": 0.25134708996340055,
+        "phase_degrees": 14.401127447797865,
+        "doppler_hz": 80.00626359887703,
+        "velocity_small_v": -0.20001565899719256,
+        "velocity_exact": -0.19998899171054643,
+        "coherence": 0.9999975027810244
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.03078548595532387,
+        "correlation_imag": -0.01691406752495059,
+        "phase_rad": -0.502395454756781,
+        "phase_degrees": -28.785139204119254,
+        "doppler_hz": -159.91744002288473,
+        "velocity_small_v": 0.3997936000572118,
+        "velocity_exact": 0.3999001850803164,
+        "coherence": 0.9999974777663335
+      },
+      {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.001953494759511378,
+        "correlation_imag": 0.0010755824528929656,
+        "phase_rad": 0.5032991266045915,
+        "phase_degrees": 28.83691578706358,
+        "doppler_hz": 160.20508770590877,
+        "velocity_small_v": -0.40051271926477194,
+        "velocity_exact": -0.4004058075189194,
+        "coherence": 0.9999085750773097
+      }
+    ]
+  },
+  "model": "Controlled thin scattering layers, not a continuous water-column accuracy claim",
+  "geometry_checks": [
+    {
+      "zone_matlab": 1,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 2,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 3,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 4,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 5,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    },
+    {
+      "zone_matlab": 6,
+      "all_own_returns_present": true,
+      "other_layers_absent_over_fir": true
+    }
+  ],
+  "oracle_iq_max_error": 1.0516220688213498e-13,
+  "oracle_iq_tgc_max_error": 2.191009700883429e-12,
+  "raw_gate_snr_db": [
+    60.70945109902273,
+    60.644273428842126,
+    49.03942803592878,
+    48.939920589811734,
+    35.12691688801551,
+    19.999999999999996
+  ],
+  "noise_seed": 20261030,
+  "notes": {
+    "positive_velocity": "Away from the fixed transducer",
+    "time_units": "seconds, measured from transmit start",
+    "gate_indices": "MATLAB indices are 1-based",
+    "gate_columns": "Six gates, one for each layer; selected gate is column 3",
+    "ambiguity": "Single-lag data cannot identify the true ambiguity interval on its own",
+    "exact_vs_small": "Compare the usual small-v output with truth.velocity_small_v_expected_mps",
+    "rf_model": "Each scattered REAL RF echo is generated from exact moving-target propagation, then summed",
+    "tgc": "Applied to summed RF including noise, before FIR and decimation"
+  }
+}

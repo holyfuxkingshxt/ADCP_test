@@ -1,0 +1,25 @@
+% View the default known-answer dataset. Run run_validation.m for assertions.
+folder=fileparts(mfilename('fullpath'));
+S=load(fullfile(folder,'narrowband_validation.mat'));
+figure('Name','Known-answer narrowband RF validation');
+subplot(2,2,1);
+plot(S.t_rf_s*1000,S.rx_rf_noisy); hold on;
+plot(S.t_rf_s*1000,S.rx_rf_noisy_tgc);
+xlabel('Receive time (ms)'); ylabel('RF amplitude'); legend('Raw','TGC'); grid on;
+subplot(2,2,2);
+tg=S.t_gate_s-S.t_gate_s(1);
+phase=unwrap(angle(S.iq_gate_noisy_tgc)); phase=phase-phase(1);
+plot(tg*1000,2*pi*S.truth.fd_true_hz(3)*tg,'k--'); hold on;
+plot(tg*1000,phase);
+xlabel('Time within gate (ms)'); ylabel('Phase (rad)'); legend('Truth','Measured'); grid on;
+subplot(2,2,3);
+L=round(S.params.lag_seconds*S.params.fs_rf/S.params.decimation);
+x=S.iq_gates_noisy_tgc;
+R=mean(x(1+L:end,:).*conj(x(1:end-L,:)),1).';
+fd=angle(R)/(2*pi*S.params.lag_seconds);
+v=-S.params.c*fd./(2*S.params.f0+fd);
+plot(1:6,S.truth.velocity_mps,'ko-'); hold on; plot(1:6,v,'rx--');
+xlabel('Layer index'); ylabel('Velocity (m/s)'); legend('Truth','Measured'); grid on;
+subplot(2,2,4);
+bar(1:6,abs(v-S.truth.velocity_mps)*1000);
+xlabel('Layer index'); ylabel('Absolute error (mm/s)'); grid on;

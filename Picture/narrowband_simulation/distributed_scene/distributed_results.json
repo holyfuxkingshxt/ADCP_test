@@ -1,0 +1,271 @@
+{
+  "configuration": {
+    "c": 1500.0,
+    "f0": 300000.0,
+    "fs_rf": 2400000.0,
+    "pulse_duration": 0.004,
+    "record_duration": 0.034,
+    "fir_taps": 1601,
+    "lowpass_hz": 6000.0,
+    "decimation": 40,
+    "lag_seconds": 0.0005,
+    "gate_start_s": 0.0145,
+    "gate_duration_s": 0.003,
+    "zone_edges_m": [
+      3.0,
+      6.0,
+      9.0,
+      12.0,
+      15.0,
+      18.0,
+      21.0
+    ],
+    "scatterers_per_zone": 240,
+    "uniform_velocity_away": 0.2,
+    "target_zone_matlab": 3,
+    "adjacent_deeper_zone_matlab": 4,
+    "far_zone_matlab": 6,
+    "far_amplitude_multiplier": 10.0,
+    "adjacent_deeper_shear_velocity": 0.6,
+    "reference_range_m": 10.0,
+    "amplitude_scale": 0.04,
+    "absorption_np_per_m": 0.005,
+    "input_snr_gate_db": 20.0,
+    "seed": 20261029,
+    "tgc_reference_range_m": 3.0,
+    "tgc_min_range_m": 3.0,
+    "tgc_max_range_m": 21.0,
+    "tgc_max_gain_db": 40.0
+  },
+  "rf_samples": 81600,
+  "iq_samples": 2040,
+  "scatterer_count": 1440,
+  "selected_gate_samples": 180,
+  "selected_gate_pairs": 150,
+  "gate_start_index_python": 870,
+  "gate_end_exclusive_python": 1050,
+  "nominal_gate_center_range_m": 10.5,
+  "unfiltered_echo_support_initial_range_m": [
+    7.87315,
+    13.12325
+  ],
+  "fir_half_support_s": 0.0003333333333333333,
+  "zone_energy_in_gate": [
+    2.37966392534834e-32,
+    0.009530127947227655,
+    0.15438546369613607,
+    0.003330455505678766,
+    1.6806365300883749e-34,
+    3.3565157098396867e-35
+  ],
+  "total_gate_energy": 0.16899930947522424,
+  "incoherent_sum_zone_energy": 0.16724604714904248,
+  "cross_zone_interference_energy": 0.0017532623261817537,
+  "fraction_gate_samples_total_above_target_only": 0.5555555555555556,
+  "fraction_deeper_zone_increases_magnitude": 0.3333333333333333,
+  "iq_linearity_max_error": 6.206335383118183e-17,
+  "far_boost_gate_max_error": 3.576224061345498e-17,
+  "estimates": {
+    "uniform_total": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.0008780658819697209,
+      "correlation_imag": -2.9855262397028443e-05,
+      "phase_rad": -0.0339880707905061,
+      "phase_degrees": -1.9473730100878712,
+      "doppler_hz": -10.818738944932617,
+      "velocity_small_v": 0.027046847362331542,
+      "velocity_exact": 0.02704733505909348,
+      "coherence": 0.9067596519914037
+    },
+    "noisy_total": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.0008755832145214567,
+      "correlation_imag": -2.980579191878648e-05,
+      "phase_rad": -0.03402793303036751,
+      "phase_degrees": -1.9496569481938681,
+      "doppler_hz": -10.831427489965932,
+      "velocity_small_v": 0.02707856872491483,
+      "velocity_exact": 0.027079057566329043,
+      "coherence": 0.9059326724790996
+    },
+    "target_zone_only": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.0008107394796726779,
+      "correlation_imag": -0.00012722183458382938,
+      "phase_rad": -0.15565142419476696,
+      "phase_degrees": -8.918169681560615,
+      "doppler_hz": -49.54538711978119,
+      "velocity_small_v": 0.12386346779945297,
+      "velocity_exact": 0.12387369674988535,
+      "coherence": 0.9028195463238541
+    },
+    "without_adjacent_deeper": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.0008346077200162378,
+      "correlation_imag": -6.113828002013559e-05,
+      "phase_rad": -0.07312330157876605,
+      "phase_degrees": -4.189656564525604,
+      "doppler_hz": -23.27586980292002,
+      "velocity_small_v": 0.05818967450730005,
+      "velocity_exact": 0.05819193195368628,
+      "coherence": 0.8892353245166917
+    },
+    "adjacent_deeper_velocity_changed": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.000889938001580101,
+      "correlation_imag": -0.00012254458057312276,
+      "phase_rad": -0.13683957596023472,
+      "phase_degrees": -7.840330172881289,
+      "doppler_hz": -43.55738984934049,
+      "velocity_small_v": 0.10889347462335122,
+      "velocity_exact": 0.10890138038981917,
+      "coherence": 0.879627594917155
+    },
+    "far_zone_amplitude_x10": {
+      "samples": 180,
+      "lag_samples": 30,
+      "pairs": 150,
+      "lag_seconds": 0.0005,
+      "correlation_real": 0.0008780658819697211,
+      "correlation_imag": -2.985526239702849e-05,
+      "phase_rad": -0.03398807079050615,
+      "phase_degrees": -1.947373010087874,
+      "doppler_hz": -10.818738944932631,
+      "velocity_small_v": 0.02704684736233158,
+      "velocity_exact": 0.027047335059093514,
+      "coherence": 0.9067596519914034
+    }
+  },
+  "expected_uniform": {
+    "phase_rad": -0.2512939064329924,
+    "velocity_small_v": 0.19997333688841487,
+    "interpretation": "Ensemble autocovariance expectation without random cross terms; geometric, unfiltered"
+  },
+  "expected_shear": {
+    "phase_rad": -0.26203711201215885,
+    "velocity_small_v": 0.20852250825129875,
+    "interpretation": "Ensemble autocovariance expectation without random cross terms; geometric, unfiltered"
+  },
+  "limitations": [
+    "Single beam with point scatterers and fixed c; no hardware blanking.",
+    "No multipath, bottom boundary or previous-ping echoes.",
+    "Point-scatterer amplitudes include assumed r^-2 two-way spreading and absorption, fixed at initial range.",
+    "Uniform number of points per metre; no full 3-D beam-volume or calibrated backscatter model.",
+    "One speckle realization; estimates can fluctuate around ensemble expectations.",
+    "Gate is a time window, not an isolated 9-12 m slab; finite pulse and FIR spread its spatial sensitivity.",
+    "Coherence is overlap-normalized, not a vendor correlation-count field."
+  ],
+  "ensemble_validation": {
+    "exact_basis_vs_rf_max_error": 5.971500381787287e-14,
+    "expected_velocity_from_full_filter": 0.19996276357271572,
+    "monte_carlo_realizations": 1000,
+    "single_ping_velocity_mean": 0.2066168118174535,
+    "single_ping_velocity_std": 0.2386190933767371,
+    "convergence": [
+      {
+        "realizations": 10,
+        "velocity_from_mean_correlation": 0.2531458531405211
+      },
+      {
+        "realizations": 100,
+        "velocity_from_mean_correlation": 0.22925387295748537
+      },
+      {
+        "realizations": 1000,
+        "velocity_from_mean_correlation": 0.20336047117100195
+      }
+    ],
+    "note": "Independent scattering realizations at the same ranges; not a physical ping-time evolution model"
+  },
+  "time_gain_compensation": {
+    "model": "Positive real RF gain; inverse point-scatterer pressure attenuation at representative range",
+    "representative_range": "clip(c*(t-Ttx/2)/2, min_range, max_range); t starts at transmit start",
+    "normalization": "Gain = 1 at 3 m for the default scene; max configured gain 40 dB",
+    "processing_order": "Sum all RF echoes, add receiver noise, apply gain, mix, FIR, decimate, select gate",
+    "applied_max_gain": 58.66365079296871,
+    "applied_max_gain_db": 35.36738173542198,
+    "rf_recovery_max_error": 2.7755575615628914e-17,
+    "signal_noise_gain_ratio_max_error": 4.440892098500626e-16,
+    "iq_zone_sum_max_error": 2.8305244335018383e-16,
+    "estimates": {
+      "clean_before": {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0008780658819697209,
+        "correlation_imag": -2.9855262397028443e-05,
+        "phase_rad": -0.0339880707905061,
+        "phase_degrees": -1.9473730100878712,
+        "doppler_hz": -10.818738944932617,
+        "velocity_small_v": 0.027046847362331542,
+        "velocity_exact": 0.02704733505909348,
+        "coherence": 0.9067596519914037
+      },
+      "clean_after": {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.15319805362045372,
+        "correlation_imag": -0.015210493670060238,
+        "phase_rad": -0.09896213550853865,
+        "phase_degrees": -5.670112696241006,
+        "doppler_hz": -31.500626090227804,
+        "velocity_small_v": 0.07875156522556952,
+        "velocity_exact": 0.07875569998199886,
+        "coherence": 0.9008791658413958
+      },
+      "noisy_before": {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.0008755832145214567,
+        "correlation_imag": -2.980579191878648e-05,
+        "phase_rad": -0.03402793303036751,
+        "phase_degrees": -1.9496569481938681,
+        "doppler_hz": -10.831427489965932,
+        "velocity_small_v": 0.02707856872491483,
+        "velocity_exact": 0.027079057566329043,
+        "coherence": 0.9059326724790996
+      },
+      "noisy_after": {
+        "samples": 180,
+        "lag_samples": 30,
+        "pairs": 150,
+        "lag_seconds": 0.0005,
+        "correlation_real": 0.1526698991803728,
+        "correlation_imag": -0.015147347702615128,
+        "phase_rad": -0.0988926854680975,
+        "phase_degrees": -5.666133502036715,
+        "doppler_hz": -31.478519455759525,
+        "velocity_small_v": 0.07869629863939881,
+        "velocity_exact": 0.07870042759430082,
+        "coherence": 0.9000692992383441
+      }
+    },
+    "limitations": [
+      "Digital gain after RF sampling: no analogue receiver, clipping or quantization model.",
+      "Amplifies receiver noise too; cannot improve samplewise input SNR.",
+      "A finite TX pulse mixes ranges at one receive time; one time gain cannot undo every scatterer loss.",
+      "Does not remove speckle or correct the simplified constant point density per metre.",
+      "Gain reweights lag products and filtering; a finite-gate speed estimate may change."
+    ]
+  }
+}
